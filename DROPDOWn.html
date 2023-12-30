@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>DropDown</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+
+        }
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            z-index: 1;
+            left: 30px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 100px;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        .dropbtn{
+            border: none;
+            padding: 20px;
+            background-color: rgb(162, 197, 109);
+            color: black;
+            font-weight: 900;
+            margin: 20px;
+        }
+        a{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+            <a href="#">Option1</a>
+            <a href="#">Option2</a>
+            <a href="#">Option3</a>
+        </div>
+    </div>
+    
+</body>
+</html>
